@@ -13,7 +13,7 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @AllArgsConstructor
-public class UserDTO {
+public class CreateUserDTO {
 
     @NotNull(message = "The name is required")
     @Schema(description = "User's full name", example = "John Doe")
@@ -33,6 +33,6 @@ public class UserDTO {
     @Schema(description = "User's Taxpayer Identification Number (CPF)", example = "10020030099")
     private String cpf;
 
-    public UserDTO() {
+    public CreateUserDTO() {
     }
 }
